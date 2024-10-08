@@ -5,6 +5,7 @@ export default async function Home() {
   const Data = await fetch('https://api.imgflip.com/get_memes');
   const dataResponse = await Data.json();
   const apiData = dataResponse.data.memes;
+  console.log(apiData);
 
   return (
     <>
@@ -20,7 +21,7 @@ export default async function Home() {
               height={192}
               className="border-[1px] border-black rounded-md shadow-sm shadow-gray hover:shadow-2xl object-cover"
             />
-             <Link href={`/singlememe/:${meme.id}`}>
+             <Link href={`/singlememe/:${meme.id} ${meme.box_count}`}>
             <button className="mt-3 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
               Generate Meme
             </button>
