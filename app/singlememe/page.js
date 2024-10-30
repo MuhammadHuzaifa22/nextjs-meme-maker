@@ -236,8 +236,8 @@ getExampleMeme();
     </div>
       
 
-      {/* Result Image Section */}
      
+      {/* Result Image Section */}
 
  {resultImageURL !== '' ? <div className='bg-slate-600  w-[300px] h-auto py-2 flex flex-col gap-1 items-center justify-center mx-auto mt-5
   rounded-md shadow-[2px_2px_5px_black]'>
