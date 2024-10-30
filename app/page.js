@@ -32,7 +32,7 @@ export default async function Home() {
             />
                         <Link key={meme.id} href={
               {
-                pathname: "singlememe",
+                pathname: "/singlememe",
                 query: {
                   url: meme.url,
                   id: meme.id,
